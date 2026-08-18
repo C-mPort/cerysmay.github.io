@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conservation Controversy | Financial Concerns on Conservation Zoos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================
+     MASTHEAD
+     ============================================ -->
+<header class="masthead">
+  <h1>Financial Concerns on Conservation Zoos</h1>
+  <p class="dek">Are animals kept in zoos really endangered? Why keep non-endangered species?</p>
+  <p class="masthead__byline">By Cerys Porter · July 2026</p>
+</header>
+
+<!-- ============================================
+     QUIZ
+     ============================================ -->
+<main>
+<section class="quiz" aria-label="Interactive quiz">
+  <div class="quiz__intro">
+    <h2>Test your instinct</h2>
+    <p>Each circle represents one percent of the animals kept in 6 zoos across the United Kingdom and Ireland. Take a guess at the questions below.</p>
+  </div>
+
+  <!-- Question 1 -->
+  <div class="question-block" id="q1" data-answer="40" data-question="1" data-reveal="40% of animals in British and Irish zoos are classed as Least Concern.">
+    <span class="question-block__tag">Question 01 / 03</span>
+    <h3 class="question-block__prompt">What percentage of animals in conservation zoos in the United Kingdom and Ireland are classed as Least Concern?</h3>
+    <div class="grid-card">
+      <div class="dot-grid" role="group" aria-label="Each circle is 1% - take your guess!"></div>
+      <p class="grid-card__readout" data-readout>Each circle is 1% - take your guess!</p>
+      <div class="grid-card__actions">
+        <button class="btn" type="button" data-action="clear">Clear</button>
+        <button class="btn btn--primary" type="button" data-action="confirm" disabled>Confirm answer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question-block" id="q2" data-answer="6" data-question="2" data-reveal="6% of animals in zoos are domesticated farm animals.">
+    <span class="question-block__tag">Question 02 / 03</span>
+    <h3 class="question-block__prompt">What percentage of animals in conservation zoos are domesticated?</h3>
+    <div class="grid-card">
+      <div class="dot-grid" role="group" aria-label="Each circle is 1% - take your guess!"></div>
+      <p class="grid-card__readout" data-readout>Each circle is 1% - take your guess!</p>
+      <div class="grid-card__actions">
+        <button class="btn" type="button" data-action="clear">Clear</button>
+        <button class="btn btn--primary" type="button" data-action="confirm" disabled>Confirm answer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="question-block" id="q3" data-answer="13" data-question="3" data-reveal="13% of animals in zoos are not evaluated by the IUCN Red List">
+    <span class="question-block__tag">Question 03 / 03</span>
+    <h3 class="question-block__prompt">What percent of animals in conservation zoos have not been evaluated by the IUCN Red List?</h3>
+    <div class="grid-card">
+      <div class="dot-grid" role="group" aria-label="Each circle is 1% - take your guess!"></div>
+      <p class="grid-card__readout" data-readout>Each circle is 1% - take your guess!</p>
+      <div class="grid-card__actions">
+        <button class="btn" type="button" data-action="clear">Clear</button>
+        <button class="btn btn--primary" type="button" data-action="confirm" disabled>Confirm answer</button>
+      </div>
+    </div>
+
+    <div class="quiz-summary">
+      <p>In the present, zoos are one of the most popular days out whilst supporting conservation. But upon learning how many animals in zoos are not endangered, 
+        many have questions as to why and whether zoos are helping the cause as much as is claimed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SUBHEADING / TRANSITION
+     ============================================ -->
+<section class="section-break">
+  <h2>A Basic Breakdown of Zoo Finances</h2>
+</section>
+
+<!-- ============================================
+     PHOTO GALLERY
+     ============================================ -->
+<section class="gallery" aria-label="Photo gallery">
+
+  <button class="gallery__item" type="button"
+    data-animal="Giraffe | Giraffa"
+    data-status="Vulnerable"
+    data-zoo="population decreasing"
+    data-caption="Giraffes are the tallest animals on Earth and are a group of seven species, who are all identifiable from their various iconic patterns. These animals 
+    with specialised hearts designed to pump blood around their tall bodies are endangered due to increased conflict with humans as well as increasing habitat loss."
+    aria-label="More information">
+    <img src="images/giraffe.jpg" alt="a group of giraffe stand in a dry savannah" />
+    <span class="gallery__caption">Mariola Grobelska | Unsplash</span>
+  </button>
+  <button class="gallery__item" type="button"
+    data-animal="Western Lowland Gorilla | Gorilla gorilla gorilla"
+    data-status="Critically Endangered"
+    data-zoo="population decreasing"
+    data-caption="One of two species of western gorilla, the lowland gorilla is the smallest of all four gorilla subspecies 
+    and is native to swamplands and rainforests in central Africa. Living in groups consisting of mostly females and one dominant 
+    male called a silverback, they are put at risk from poaching, habitat loss and diseases such as Ebola virus."
+    aria-label="More information">
+    <img src="images/gorilla.jpg" alt="an adult male gorilla walking through grass" />
+    <span class="gallery__caption">Paula Robinson | Unsplash</span>
+  </button>
+  <button class="gallery__item" type="button"
+    data-animal="South American Tapir | Tapirus terrestris"
+    data-status="Vulnerable"
+    data-zoo="population decreasing"
+    data-caption="Also called a Lowland Tapir, the South American Tapir is one of four types of tapir from around the world and the largest animal in the amazon. 
+    While famed for their swimming and diving capabilities, the Lowland tapir is also quick on land and has been known to move quickly over even 
+    difficult mountainous terrain. Despite this, they are frequently hunted for their meat and hide and are at risk due to habitat loss."
+    aria-label="More information">
+    <img src="images/lowland tapir.jpg" alt="a tapir walks with its head to the ground in front of a tree" />
+    <span class="gallery__caption">Bernd Dittrich | Unsplash</span>
+  </button>
+ 
+</section>
+
+<!-- ============================================
+     ARTICLE
+     ============================================ -->
+<article class="article">
+  <p class="article__drop-cap">Animal rights activists have complained that zoos finances aren’t transparent or detailed enough. So how does it work?</p>
+  <p>It is important to understand that not all zoos in the UK and Ireland operate under the same business model. While most zoos are registered charities, 45% of zoos are privately owned. 
+    However, many zoos combine business and charity so they can keep the conservation work they do separate to the cost for upkeep on zoos. </p>
+  <p>For example, Chester zoo is a charity managed by the North England Zoological Society which has businesses underneath. 
+    Though these operate as businesses, the profits go back into the charity which covers the cost of running the zoo and funds conservation efforts around the globe.</p>
+
+  <p>Zoos make their money mostly through ticket sales, memberships, and on-site spending for food and drink, parking, and gift shop sales. For most zoos, the average admission cost is between £20 to £25, 
+    although this can climb to almost £50 in some places with donations added on top. </p>
+  <p>Zoos also make money through experiences, typically animal feedings or zookeeper for a day. These experiences usually give a behind-the-scenes look at taking care of the animals and the processes involved in being a zookeeper. 
+    These experiences usually last a full day and cost around £250 to £300 and are targeted at older teens and adults.</p>
+
+  <p>But what does it cost to run a zoo? There are expenses that many would assume such as cost of food, water, activities and stimulation for animals, veterinary costs, and more general costs such as 
+    lights, water, pay for the staff who keep the zoo running, and maintenance for state-of-the-art enclosures and habitats. </p>
+  <p>Such costs add up for zoos, with the BBC finding that 40% of accredited zoos and aquariums in the UK and Ireland have raised concerns around finances publicly since 2022.</p>
+
+  <p>There are many costs that cannot be cut for zoos, especially surrounding keeping animals healthy and happy. However, many zoos across the UK are working towards using completely sustainable off-the-grid energy.</p>
+  <p>Zoos like Marwell zoo which create their own renewable energy using animal waste and Edinburgh Zoo who have a 5000 square meter solar meadow that creates almost a quarter of the zoo’s electricity pave the way in cutting down costs and sustainability efforts.</p>
+
+<div class= "article__image-grid">
+  <button class="gallery__item" type="button"
+    data-animal="Red Panda | Ailurus fulgens"
+    data-status="Endangered"
+    data-zoo="population decreasing"
+    data-caption="Red pandas are arboreal (tree dwelling) mammals native to China. Despite their name and 
+    their diet mostly consisting of bamboo, they are more closely related to raccoons and weasels than giant pandas. 
+    While being shy and solitary creatures, they are at risk of extinction due to habitat loss and poaching."
+    aria-label="More information">
+    <img src="images/red panda.jpg" alt="a red panda sleeps in a pile of branches" />
+    <span class="gallery__caption">Thomas Bonometti | Unsplash</span>
+  </button>
+  <button class="gallery__item" type="button"
+    data-animal="Ring Tailed Lemur | Lemur catta"
+    data-status="Endangered"
+    data-zoo="population decreasing"
+    data-caption="As the most internationally recognised species of lemur, the ring tailed lemur is a highly social primate native to Madagascar.
+    As they are strictly diurnal animals, they can often be spotted in forests and scrublands searching for food and sunbathing. As the most vocal 
+    primate, the ring tailed lemur is often put at risk due to deforestation, local hunting, and the exotic pet trade."
+    aria-label="More information">
+    <img src="images/ring tailed lemur.jpg" alt="a ring tailed lemur investigates a fallen branch" />
+    <span class="gallery__caption">Juan Camilo Guarin P | Unsplash</span>
+  </button>
+  <button class="gallery__item" type="button"
+    data-animal="Siberian Tiger | Panthera tigris tigris"
+    data-status="Endangered"
+    data-zoo="population decreasing"
+    data-caption="Being the largest big cat in the world and the largest subspecies of tiger, the siberian tiger (also called amur tiger)
+    inhabits ranges around Northeast China and the Eastermost part of Russia. With paler stripes and large paws that act like snowshoes, they
+    are prefectly adapted to the snowy environment where they hunt elk, deer, and wild boar. Due to overhunting and logging, they have been
+    at risk of extinction since the 1940s."
+    aria-label="More information">
+    <img src="images/siberian tiger.jpg" alt="a tiger lays down on a tree stump" />
+    <span class="gallery__caption">Frida Lannerström | Unsplash</span>
+  </button>
+</div>
+
+  <p>One of the biggest examples of a charity based zoo in the UK is Chester Zoo. As they are a registered charity, 
+    the income and expenditures of the zoo are publicly available and provide some insight into the income streams and what money is spent on.</p>
+  <p>The North England Zoological Society, the charity branch of Chester zoo, brought in just over £63 million pounds in 2024 through four main income streams, 
+    the largest of which was charitable activities which brought in £38 million, a category that includes income generated through the activities of Chester Zoo, 
+    such as admissions and educational programmes as well as the one government grant given to Chester zoo at £201,000.</p>
+
+<div class="stat-callout"></div>
+  <iframe title="Income Streams for North of England Zoological Society" aria-label="Donut Chart" id="datawrapper-chart-j6iIr" src="https://datawrapper.dwcdn.net/j6iIr/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="563" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);
+for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+</div>
+
+<p>Just over £60 million of the money made by the North England Zoological Society goes into expenditure, with almost £35 million going back into the fundraising category – though this covers running site through animal care and maintenance as well as funding developments and fundraising. Just over £26 million going back into charitable activities such as research, education and conservation programmes.</p>
+
+<div class="stat-callout">
+  <iframe title="Expenditure for North of England Zoological Society" aria-label="Donut Chart" id="datawrapper-chart-k9fSF" src="https://datawrapper.dwcdn.net/k9fSF/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="557" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+</div>
+
+<p>Out of the almost 670 employees under the North England Zoological Society, only 24 make over £60,000 a year as of 2024. Half of these employees make £60 - £70,000 a year.</p>
+<p>Zoos argue that the visitor income supports more than just the animals currently held in captivity. These funds not only support veterinary care and enriching the lives of the animals, but it also supports conservation research, educational programmes, national and international field projects, and breeding programmes. Many zoos in the UK are also members of the BIAZA and contribute to the association's charitable work as well.</p>
+
+<p>Despite this, animal rights activists argue that this money would be better placed elsewhere. When talking to a spokesperson for the international animal rights organisation PETA, they said that expensive and long-drawn projects divert money from other causes.</p>
+<blockquote>“The massively expensive breeding programmes divert money from genuine in situ wildlife conservation projects.”</blockquote>
+<p>This is along with the criticism that a lot of zoos, especially those operated as companies, do not have to be transparent with where money goes. Though these zoos, especially accredited zoos do contribute to conservation through their accreditation membership and programmes they run, there is a lacking level of transparency.</p>
+<p>Ultimately, deciding on whether the money you spend at a zoo goes towards conservation depends on what zoo you are at. At some zoos, it is not possible for the public to determine from the available financial information exactly how income is allocated. As public interest in conservation continues to grow, the calls for more transparent declarations into where money is spent in zoos increases.</p>
+
+</article>
+</main>
+
+<!-- ANIMAL INFO MODAL -->
+<div class="modal-overlay" id="animalModal" role="dialog" aria-modal="true" aria-labelledby="modalAnimalName" hidden>
+  <div class="modal">
+    <button class="modal__close" id="modalClose" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 3L15 15M15 3L3 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal__photo" id="modalPhoto"></div>
+    <div class="modal__body">
+      <div class="modal__meta">
+        <span class="modal__status" id="modalStatus"></span>
+        <span class="modal__zoo" id="modalZoo"></span>
+      </div>
+      <h2 class="modal__name" id="modalAnimalName"></h2>
+      <p class="modal__caption" id="modalCaption"></p>
+    </div>
+  </div>
+</div>
+
+<!-- NEXT AND PREVIOUS BUTTONS -->
+
+<div class="moving-button">
+  <a class="previous-page" href="articletwo.html">Previous Page: Welfare</a>
+  <a class="next-page" href="about.html">Next Page: About</a>
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+  Caged Conservation — MSc Dissertation Project · <a href="about.html">About</a> · <a href="index.html">Home</a> ·
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

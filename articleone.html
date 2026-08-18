@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conservation Controversy</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================
+     MASTHEAD
+     ============================================ -->
+<header class="masthead">
+  <h1>Do Zoos Really Save Endangered Animals?</h1>
+  <p class="dek">Why animal rights activists believe that zoos aren't as effective as they claim.</p>
+  <p class="masthead__byline">By Cerys Porter · July 2026</p>
+</header>
+
+<!-- ============================================
+     QUIZ
+     ============================================ -->
+<main>
+<section class="quiz" aria-label="Interactive quiz">
+  <div class="quiz__intro">
+    <h2>Test your instinct</h2>
+    <p>Each circle represents one percent of the animals kept in 6 zoos across the United Kingdom and Ireland. Take a guess at the questions below.</p>
+  </div>
+
+  <!-- Question 1 -->
+  <div class="question-block" id="q1" data-answer="23" data-question="1" data-reveal="23% of animals in British and Irish zoos are endangered or critically endangered.">
+    <h3 class="question-block__prompt">What percentage of animals in conservation zoos in the United Kingdom and Ireland are classed as endangered or critically endangered?</h3>
+    <div class="grid-card">
+      <div class="dot-grid" role="group" aria-label="Each circle is 1% - take your guess!"></div>
+      <p class="grid-card__readout" data-readout>Each circle is 1% - take your guess!</p>
+      <div class="grid-card__actions">
+        <button class="btn" type="button" data-action="clear">Clear</button>
+        <button class="btn btn--primary" type="button" data-action="confirm" disabled>Confirm answer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question-block" id="q2" data-answer="40" data-question="2" data-reveal="48% of animals in zoos have a decreasing population in the wild.">
+    <h3 class="question-block__prompt">What percentage of animals in conservation zoos have a decreasing population in the wild?</h3>
+    <div class="grid-card">
+      <div class="dot-grid" role="group" aria-label="Each circle is 1% - take your guess!"></div>
+      <p class="grid-card__readout" data-readout>Each circle is 1% - take your guess!</p>
+      <div class="grid-card__actions">
+        <button class="btn" type="button" data-action="clear">Clear</button>
+        <button class="btn btn--primary" type="button" data-action="confirm" disabled>Confirm answer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="question-block" id="q3" data-answer="38" data-question="3" data-reveal="38% of animals in zoos are critically endangered - this is 32% higher than a random sample from the IUCN Red List">
+    <h3 class="question-block__prompt">What percentage of critically endangered animals in zoos are mammals?</h3>
+    <div class="grid-card">
+      <div class="dot-grid" role="group" aria-label="Each circle is 1% - take your guess!"></div>
+      <p class="grid-card__readout" data-readout>Each circle is 1% - take your guess!</p>
+      <div class="grid-card__actions">
+        <button class="btn" type="button" data-action="clear">Clear</button>
+        <button class="btn btn--primary" type="button" data-action="confirm" disabled>Confirm answer</button>
+      </div>
+    </div>
+
+    <div class="quiz-summary">
+      <p>For decades, animal rights activists have campaigned against zoos, claiming they do little to benefit conservation internationally. 
+        Zoos however argue that it is difficult to describe the full scope of the work they do, leaving a murky debate. </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SUBHEADING / TRANSITION
+     ============================================ -->
+<section class="section-break">
+  <h2>How Zoos Play In the World of Conservation</h2>
+</section>
+
+<!-- ============================================
+     PHOTO GALLERY
+     ============================================ -->
+<section class="gallery" aria-label="Photo gallery">
+
+  <button class="gallery__item" type="button"
+    data-animal="African Lion | Panthera leo leo"
+    data-status="Vulnerable"
+    data-zoo="population decreasing"
+    data-caption="Lions are the largest big cat in Africa, and the second-largest in the world. They live in groups of ten to fifteen members called a pride and the majority 
+    of prides live in the open grasslands and savannahs to the south of the Sahara desert.
+    As one of the most famous big cats, the African lion is considerably less endangered than their Asiatic lion counterparts and also less present in zoos."
+    aria-label="More information">
+    <img src="images/african-lion.jpg" alt="two african lions sitting on a rock" />
+    <span class="gallery__caption">Wade Lambert | Unsplash</span>
+  </button>
+
+  <button class="gallery__item" type="button"
+    data-animal="Capybara | Hydrochoerus hydrochaeris"
+    data-status="Least Concern"
+    data-zoo="population stable"
+    data-caption="The capybara is the largest rodent in the world and equally popular after going viral, the capybara appears in five of six zoos examined.
+    Native to South America, it is a semiaquatic animal that lives near freshwater in savannahs and dense forests in large social groups."
+    aria-label="More information">
+    <img src="images/capybara.jpg" alt="two capybaras sitting on grass" />
+    <span class="gallery__caption">Jaime Dantas | Unsplash</span>
+  </button>
+ 
+  <button class="gallery__item" type="button"
+    data-animal="Kirk's Dik-dik | Madoqua kirkii"
+    data-status="Least Concern"
+    data-zoo="population stable"
+    data-caption="Kirk's dik-dik is a smaller species of antelope that lives in the shrublands of East and South Africa. 
+    Their elongated and flexible nose helps them keep moisture in their body. 
+    Along with other adaptations, this makes them almost completely independent of water, as they get the majority of the water they need from their food."
+    aria-label="More information">
+    <img src="images/kirks dik dik.jpg" alt="a kirk's dik-dik stands in the dry brush and looks back towards the camera." />
+    <span class="gallery__caption">Bob Brewer | Unsplash</span>
+  </button>
+ 
+</section>
+
+<!-- ============================================
+     ARTICLE
+     ============================================ -->
+
+<article class="article">
+  <p class="article__drop-cap">For decades, animal rights activists have ccampaigned against zoos, claiming they do little to benefit conservation internationally.
+    Almost half of the animals in UK and Irish zoos aren't in danger of dying out, which may surprise some of the 30 million people who visit accredited zoos each year.</p>
+  <p>Zoos however argue that it is difficult to describe the full scope of the work they do, and say that keeping these animals helps to preserve them if they become at risk of 
+    exintction in the future and creates a healthy breeding population</p>
+  <p>Chris Lewis from Born Free, a UK based animal rights charity, said one of the reasons animals are kept is to entertain and attract visitors.
+    "There is usually a role along the lines of visitor engagement to appeal to the public" he says.
+    Animals that are in the conservation category of "Least Concern" in terms of extinction, "are popular with the public" he said.</p>
+
+  <!-- block describing IUCN red list system-->
+<div class="iucn-breakout">
+  <div class="stat-callout">
+  <strong>What is the IUCN Red List?</strong>
+  The IUCN Red List is a comprehensive inventroy list that tracks the extinction risks of various animal and plant species. Below is the various categories, what they mean, and an example.
+  <div class="iucn-grid">
+    <button class="gallery__item" type="button"
+    data-animal="Least Concern"
+    data-status="Waterbuck"
+    data-zoo="Robbie Cheadle | Unsplash"
+    data-caption="A species that has been evaluated and while important for overall world biodiversity, it is not at the same risk as anything vulnerable and below.">
+    <img src="images/waterbuck.jpg" alt="male waterbuck sitting in grass" />
+    <span class="gallery__caption">Least Concern</span>
+    </button>
+    <button class="gallery__item" type="button"
+    data-animal="Near Threatened"
+    data-status="Royal Python"
+    data-zoo="Crissta Ames-Walle | Unsplash"
+    data-caption="When a species has been evaluated and does not qualify for vulnerable but is close to or likely will in the near future">
+    <img src="images/ball python.jpg" alt="ball python climbing from branch" />
+    <span class="gallery__caption">Near Threatened</span>
+    </button>
+   <button class="gallery__item" type="button"
+    data-animal="Vulnerable"
+    data-status="Snowy Owl"
+    data-zoo="Zdeněk Macháček | Unsplash"
+    data-caption="when a species has a population decline of around thirty to fifty percent or has restricted geographic range along with other criteria.">
+    <img src="images/snowy owl.jpg" alt="snowy owl sitting in snow" />
+    <span class="gallery__caption">Vulnerable</span>
+    </button>
+    <button class="gallery__item" type="button"
+    data-animal="Endangered"
+    data-status="African Wild Dog"
+    data-zoo="Duncan McNab | Unsplash"
+    data-caption="A species at high risk of extinction with a population decline of fifty to seventy percent within the last ten years and very limited geographic range">
+    <img src="images/african wild dog.jpg" alt="two african wild dogs, one laying the other sitting in grass" />
+    <span class="gallery__caption">Endangered</span>
+    </button>
+    <button class="gallery__item" type="button"
+    data-animal="Critically Endangered"
+    data-status="Red Ruffed Lemur"
+    data-zoo="Christiana Kamprogianni | Unsplash"
+    data-caption="A species with only ten to twenty percent of it's population left after then years and heavily resistred habitat range. ">
+    <img src="images/red ruffed lemur.jpg" alt="a red ruffed lemur sitting" />
+    <span class="gallery__caption">Critically Endangered</span>
+    </button>
+    <button class="gallery__item" type="button"
+    data-animal="Data Deficient"
+    data-status="Azara's Agouti"
+    data-zoo="Edan Menn | Unsplash"
+    data-caption="There is not enough infromation avaliable to make a direct or indirect assessment of the population">
+    <img src="images/azaras agouti.jpg" alt="azara's agouti sitting on ground between two trees" />
+    <span class="gallery__caption">Data Deficient</span>
+    </button>
+    <button class="gallery__item" type="button"
+    data-animal="Not Evaluated"
+    data-status="Atlas Moth"
+    data-zoo="János Szüdi | Unsplash"
+    data-caption="A species which hasn't been evaluated by the IUCN red list">
+    <img src="images/atlas moth.jpg" alt="close up of atlas moth on a tree trunk" />
+    <span class="gallery__caption">Not Evaluated</span>
+    </button>
+    <button class="gallery__item" type="button"
+    data-animal="Extinct in the Wild"
+    data-status="Spix macaw"
+    data-zoo="Vilius Kukanauskas | Pixabays"
+    data-caption="When a species have not been found in the wild despite exhaustive surveys of the habitat at appropriate times and is only known to live in captivity.">
+    <img src="images/spix macaw.jpg" alt="spix macaw preched on branch" />
+    <span class="gallery__caption">Extinct in the Wild</span>
+    </button>
+    <button class="gallery__item" type="button"
+    data-animal="Extinct"
+    data-status="Japanese Otter"
+    data-zoo="Charlie Seaman | Unsplash"
+    data-caption="When there is no reasonable doubt that the last individual of a species has died.">
+    <img src="images/otter.jpg" alt="two otters sat on a bamboo platform" />
+    <span class="gallery__caption">Extinct</span>
+    </button>
+  </div>
+  </div>
+</div>
+
+  <p>Lewis also said that keeping species that are endangered in zoos may confuse or distract visitors, making them believe the animals are not endangered.</p>
+  <blockquote>"Sometimes keeping species in zoos distracts. They see a species in a zoo then think that because they are in a zoo they are okay and protected."</blockquote>
+  <p>Lewis suggests zoos are best equipped for housing smaller animals like reptiles, invertebrates, and amphibians; as well as species native to
+    the country the zoo is based as these animals can be provided enclosures that are closer to their natural habitat.</p>
+  <p>For mammals, he says "the populations aren't large enough to be genetically diverse in many species. Or even in prey species, they don't have the survival behavioural traits they would need."</p>
+
+  <p>Rhian Waller, from Chester Zoo, says conservation from a zoo's perspective is complicated. She said that many of the more publicised sides of conservation such as species being reintroduced can take decades.</p>
+  <blockquote>"Species reintroductions and landscape restorations can take decades to come to furition, and the planning and co-ordination that goes into the work is phenomenal.</blockquote>
+  <p>Both Waller and Lewis sadi conservation can be poorly explained. Similarly, a spokesperson from Folly Farm, a Welsh family-run zoo and farm said that the public misunderstands, 
+    "the sheer amount of conservation that zoos carry out", and that it is, "often difficult to communicate what conservation work is being carried out in detail".</p>
+  <p>Both zoos said how important education is to the goal of zoos and conservation: about endangered species and species that are under-recognised. 
+    Chester Zoo's event Action Indonesia Day, in August this year, taught visitors about Indonesian species like the anoa, babirusa, and the banteng.</p>
+<section class="gallery" aria-label="Photo gallery">
+  <button class="gallery__item" type="button"
+    data-animal="Lowland Anoa | Bubalus depressicornis"
+    data-status="Endangered"
+    data-zoo="population decreasing"
+    data-caption="The lowland anoa is one of two anoa species native to Indonesia. Resembling buffalo, they are present
+    in cave art over 51,000 years old - one of the oldest cave art pieces in the world. Living on the islands of Sulawesi, the
+    lowland anoa lives in lower elevation forests in small groups rather than herds like most cattle."
+    aria-label="More information">
+    <img src="images/lowland-anoa.jpg" alt="a lowland anoa" />
+    <span class="gallery__caption">No-longer-here | Pixabay</span>
+  </button>
+  <button class="gallery__item" type="button"
+    data-animal="Banteng | Bos javanicus"
+    data-status="Critically Endangered"
+    data-zoo="population decreasing"
+    data-caption="The Banteng, also called the tembadau is a wild bovine found across parts of Southeast Asia. The Banteng is a symbol
+    of democracy in Indonesia and is present on the coat-of-arms called Garuda Pancasila. "
+    aria-label="More information">
+    <img src="images/banteng.jpg" alt="a female banteng with male in the background" />
+    <span class="gallery__caption">Irfan Rahat | Pexels</span>
+  </button>
+  <button class="gallery__item" type="button"
+    data-animal="North Sulawesi Babirusa | Babyrousa celebensis"
+    data-status="Vulnerable"
+    data-zoo="population decreasing"
+    data-caption="The babirusa is a group of wild pig-like animals native to Indonesia, with the North Sulawesi Babirusa being native to the island
+    of Sulawesi and a few neighbouring small islands. The males have distinctive curved canines that emerge through the rood of the snout and the long,
+    lower canines emerge through the sides of the mouth."
+    aria-label="More information">
+    <img src="images/north-sulawesi-babirusa.jpg" alt="a babirusa in the foreground with another resting on the floor against a wall in the background" />
+    <span class="gallery__caption">Anna Zaro | Unsplash</span>
+  </button>
+</section>
+  <p>Waller said that non-endangered animals are kept in zoos beccause of the public interest but once people are in the zoo they find out about other
+    lesser-known and potentially more at-risk animals.</p>
+  <blockquote>"They are essentially animals that help us drive funda towards under-recognised species and engage people with more holistic conservation messaging."</blockquote>
+  <p>Waller also clarified that while many species in zoos are not currently at risk of extinction, many species are facing significant threats in the wild. 
+    By keeping a population of these species in captivity, it ensures if a species does later become at risk of extinction that a healthy and genetically diverse breeding population is available.</p>
+  <blockquote>"While many species are classified as Least Concern right now, global biodiversity is trending downward... by the time a species becomes endangered,
+    the genetic diversity of the population has already significantly reduced."</blockquote>
+
+<div class="article__image-grids">
+  <button class="gallery__item" type="button"
+    data-animal="Plains Zebra | Equus quagga"
+    data-status="Near Threatened"
+    data-zoo="population decreasing"
+    data-caption="The plains zebra is the most common zebra species out of the six alive in Africa, and as such, is the most common in zoos - present in five of six that were examined.
+    Living south of Africa, the plains zebra is a medium sized zebra that often gets preyed on by lions."
+    aria-label="More information">
+    <img src="images/plains-zebra.jpg" alt="group of plains zebra" />
+    <span class="gallery__caption">Birger Strahl | Unsplash</span>
+  </button>
+    <button class="gallery__item" type="button"
+    data-animal="White Rhinoceros | Ceratotherium simum"
+    data-status="Near Threatened"
+    data-zoo="population decreasing"
+    data-caption="While the least endangered species of rhinoceros, the southern white rhinoceros is the largest living species, and 
+    easy to tell apart from the smaller subspecies both due to size and their more square lips, designed to help them graze more effectively.
+    While they are the second largest land mammal, they are incredibly fast and can run up to 25 miles an hour. Similar to other species of 
+    rhinoceros, the southern white rhinoceros is at risk due tot illegal poaching for their horns."
+    aria-label="More information">
+    <img src="images/rhino.jpg" alt="a mother and calf rhino crossing a road in a reserve" />
+    <span class="gallery__caption">RedCharlie | Unsplash</span>
+</div>
+
+  <p>Almost half the species in UK zoos have decreasing populations and are over two times as likely to have a decreasing population. For example, the Plains Zebra
+    was deemed Near Threatened in 2016 after a significant decline in the global population caused by an increase in illegal poaching.</p>
+<div class="stat-callout">
+  <div style="min-height:406px" id="datawrapper-vis-PAhrO"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/PAhrO/embed.js" charset="utf-8" 
+    data-target="#datawrapper-vis-PAhrO"></script><noscript><img src="https://datawrapper.dwcdn.net/PAhrO/full.png" alt="Global Population of Plains Zebra since 1992 (Line chart)" /></noscript></div>
+</div>
+  <p>Their population decreased from over 670,000 in 1992 down to just under 500,000 in 2015 when they were listed as Near Threatened by the IUCN,
+    the global environmental network which tracks the populations of fauna and flora.</p>
+  <p>The white rhinoceros is the most common type of rhinoceros in the world and has been hit by similar decline due to illegal poaching, leading to dramatic
+    fluctuations in the species number over recent years.</p>
+<div class="stat-callout">
+  <iframe title="Global Population for White Rhinoceros" aria-label="Line chart" id="datawrapper-chart-rbtPk" src="https://datawrapper.dwcdn.net/rbtPk/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="397" 
+  data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+</div>
+  <p>Although in recent years there has been some recovery, numbers dropped from just over 17,00 in 2023 to under 15,800 in 2024 - their lowest point since the early 2010s.</p>
+
+  <p>Though both animal rights activists and zoos argue around the best ways to support conservation, both agree on certain cases where animals must be kept in captivity.</p>
+
+<div class="article__image-grids">
+  <button class="gallery__item" type="button"
+    data-animal="Pere David's Deer | Elaphurus davidianus"
+    data-status="Extinct in the Wild"
+    data-zoo=""
+    data-caption="Native to the river valleys of China, the Pere David's deer is the last living member of the Elaphurus genus. It was nearly hunted to extinction in the 19th century but luckily members remain in nature reserves and zoos."
+    aria-label="More information">
+    <img src="images/pere davids deer.jpg" alt="two deer sat on the grass in front of a fallen log" />
+    <span class="gallery__caption">Kev | Pixabay</span>
+  </button>
+    <button class="gallery__item" type="button"
+    data-animal="Socorro Dove | Zenaida graysoni"
+    data-status="Extinct in the Wild"
+    data-zoo=""
+    data-caption="The socorro dove is native to the Socorro islands off the coast of Mexico. Closely related moruning doves, they were originally thought to be a subspecies. There are a number of reasons for their extinction in the wild, though the primary reason is believed to be predation from feral introduced cats."
+    aria-label="More information">
+    <img src="images/socorro dove.jpg" alt="brown dove perched on a wooden perch" />
+    <span class="gallery__caption">Socorro dove by <a href="https://commons.wikimedia.org/wiki/File:Zenaida_graysoni_-_Socorrotaube_-_Wildfarbig_-_Deutscher_Kanarien-_und_Vogelz%C3%BCchterbund_(DKB)_-_Vogelbund_-_Johann_Alexi.jpg">Johann Alexi</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY- SA 4.0</a></span>
+  </button>
+</div>
+
+  <p>The siz BIAZA zoos examined including Chester Zoo and Folly Farm house eleven animals which are extinct in the wild. Nine of these are various types of Partula snail or tree snail. 
+    The remaining two are the Socorro dove and Pere David's deer.</p>
+  <p>These species require the most support, and their status in captivity protects them from extinction. "If a species is extinct in the wild, 
+    there is justification as to why that animal is kept in captivity, but there has to be an action plan to release them", Lewis said.</p>
+  <p>Chester Zoo is currently involved in one of these action plans for snails which are Extinct in the Wild. They have been working for several years with governments
+    to restore habitats and clear invasive species from uninhabited Atlantic islands so these snails can be released back into the islands' ecosystem.</p>
+
+</article>
+</main>
+
+<!-- ANIMAL INFO MODAL -->
+<div class="modal-overlay" id="animalModal" role="dialog" aria-modal="true" aria-labelledby="modalAnimalName" hidden>
+  <div class="modal">
+    <button class="modal__close" id="modalClose" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 3L15 15M15 3L3 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal__photo" id="modalPhoto"></div>
+    <div class="modal__body">
+      <div class="modal__meta">
+        <span class="modal__status" id="modalStatus"></span>
+        <span class="modal__zoo" id="modalZoo"></span>
+      </div>
+      <h2 class="modal__name" id="modalAnimalName"></h2>
+      <p class="modal__caption" id="modalCaption"></p>
+    </div>
+  </div>
+</div>
+
+<!-- NEXT AND PREVIOUS BUTTONS -->
+
+<div class="moving-button">
+  <a class="previous-page" href="index.html">Previous Page: Home</a>
+  <a class="next-page" href="articletwo.html">Next Article: Welfare</a>
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+  Caged Conservation — MSc Dissertation Project · <a href="about.html">About</a> · <a href="index.html">Home</a> ·
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

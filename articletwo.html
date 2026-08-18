@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conservation Controversy | Zoos Quiet Welfare Controversy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================
+     MASTHEAD
+     ============================================ -->
+<header class="masthead">
+  <h1>Zoos Quiet Welfare Controversy</h1>
+  <p class="dek">Are animals kept in zoos really endangered? Why keep non-endangered species?</p>
+  <p class="masthead__byline">By Cerys Porter · July 2026</p>
+</header>
+
+<!-- ============================================
+     QUIZ
+     ============================================ -->
+<main>
+<section class="quiz" aria-label="Interactive quiz">
+  <div class="quiz__intro">
+    <h2>Test your instinct</h2>
+    <p>Each circle represents one percent of the animals kept in 6 zoos across the United Kingdom and Ireland. Take a guess at the questions below.</p>
+  </div>
+
+  <!-- Question 1 -->
+  <div class="question-block" id="q1" data-answer="34" data-question="1" data-reveal="34% of  animals in zoos are mammals - compared to 6% from a random sample of the IUCN Red List">
+    <span class="question-block__tag">Question 01 / 03</span>
+    <h3 class="question-block__prompt">What percentage of animals in conservation zoos are mammals?</h3>
+    <div class="grid-card">
+      <div class="dot-grid" role="group" aria-label="Each circle is 1% - take your guess!"></div>
+      <p class="grid-card__readout" data-readout>Each circle is 1% - take your guess!</p>
+      <div class="grid-card__actions">
+        <button class="btn" type="button" data-action="clear">Clear</button>
+        <button class="btn btn--primary" type="button" data-action="confirm" disabled>Confirm answer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question-block" id="q2" data-answer="25" data-question="2" data-reveal="25% of animals in zoos are birds.">
+    <span class="question-block__tag">Question 02 / 03</span>
+    <h3 class="question-block__prompt">What percentage of animals in conservation zoos are birds?</h3>
+    <div class="grid-card">
+      <div class="dot-grid" role="group" aria-label="Each circle is 1% - take your guess!"></div>
+      <p class="grid-card__readout" data-readout>Each circle is 1% - take your guess!</p>
+      <div class="grid-card__actions">
+        <button class="btn" type="button" data-action="clear">Clear</button>
+        <button class="btn btn--primary" type="button" data-action="confirm" disabled>Confirm answer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="question-block" id="q3" data-answer="13" data-question="3" data-reveal="13% of animals in zoos have not been evaluated on the IUCN Red List">
+    <span class="question-block__tag">Question 03 / 03</span>
+    <h3 class="question-block__prompt">What percentage of animals in zoos are classed as Not Evaluated?</h3>
+    <div class="grid-card">
+      <div class="dot-grid" role="group" aria-label="Each circle is 1% - take your guess!"></div>
+      <p class="grid-card__readout" data-readout>Each circle is 1% - take your guess!</p>
+      <div class="grid-card__actions">
+        <button class="btn" type="button" data-action="clear">Clear</button>
+        <button class="btn btn--primary" type="button" data-action="confirm" disabled>Confirm answer</button>
+      </div>
+    </div>
+
+    <div class="quiz-summary">
+      <p>In the present, zoos are one of the most popular days out whilst supporting conservation. But upon learning how many animals in zoos are not endangered, 
+        many have questions as to why and whether zoos are helping the cause as much as is claimed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SUBHEADING / TRANSITION
+     ============================================ -->
+<section class="section-break">
+  <h2>What the brochures don't say</h2>
+</section>
+
+<!-- ============================================
+     PHOTO GALLERY
+     ============================================ -->
+<section class="gallery" aria-label="Photo gallery">
+
+  <button class="gallery__item" type="button"
+    data-animal="African Savanna Elephant | Loxodonta africana"
+    data-status="Endangered"
+    data-zoo="population decreasing"
+    data-caption="The African bush elephant or savanna elephant is the largest living land mammal. They live in large family 
+    units comprising of mostly females and their young. While African elephants are not often kept in captivity, their equally endangered Asian 
+    counterparts are: both are at risk of hunting for their tusks. Elephants are very intelligent and are known for their high empathy and emotional capabilities."
+    aria-label="More information">
+    <img src="images/african elephant.jpg" alt="two elephants in the savanna at sunset" />
+    <span class="gallery__caption">Mylon Ollila | Unsplash</span>
+  </button>
+
+  <button class="gallery__item" type="button"
+    data-animal="Asian Elephant | Elephas maximus"
+    data-status="Endangered"
+    data-zoo="population decreasing"
+    data-caption="Also called the Asiatic elephant, the Asian elephant is the largest land animal in Asia and the only known living species in the 
+    genus Elephas. They are known for their intelligence and ability to display self-aware behaviours as well as learning, greeting individuals and grief.
+    There are three recognised subspecies: the Sri Lankan elephant, the Indian elephant, and the Sumatran elephant."
+    aria-label="More information">
+    <img src="images/asian-elephant.jpg" alt="an asian elephant walks down a dirt road" />
+    <span class="gallery__caption">Udara Karuarathna | Unsplash</span>
+  </button>
+ 
+  <button class="gallery__item" type="button"
+    data-animal="African Forest Elephant | Loxodonta cyclotis"
+    data-status="Critically Endangered"
+    data-zoo="population decreasing"
+    data-caption="The forest elephant is the second and slightly smaller elephant native to Africa. Living in the Congo Basin, they are a high social animal that lives
+    in groups of 20. It is a key contributor to the diversity and structure of the rainforest as whilst it walks five to seven and a half kilometers a day, they disperse
+    all different types of seeds from the tress, fruit and leaves they eat."
+    aria-label="More information">
+    <img src="images/african-forest-elephant.jpg" alt="an elephant stands slightly behind a bush" />
+    <span class="gallery__caption">Arthur Walden | Unsplash</span>
+  </button>
+ 
+</section>
+
+<!-- ============================================
+     ARTICLE
+     ============================================ -->
+<article class="article">
+  <p class="article__drop-cap">Indoor space for elephants will have to be dramatically increased by 2040 in the eleven zoos across the UK that keep Asian and African Elephants, according to new regulations for zoos in Britain. </p>
+  <p>Though zoo licensing Is set out in the 1981 Zoo Licensing Act, the inspections and requirements are set in the Standards of Modern Zoos. For the first time in almost 15 years for Scotland and England and 20 years for Wales, 
+    these standards are set to change in 2027 with the release of the Standards of Modern Zoo Practice 2026.</p>
+  <p>One of the biggest changes in the UK standards comes with specific guidelines for specific species, the largest of these changes being standards for keeping elephants which zoos will need to put in place by 2040.</p>
+  
+<p>The new enclosure standards require significantly increased space for each elephant that will need to be done by 2040. The original 2012 Scottish and English requirements for indoor spaces required 200 square meters for four or fewer adult individuals and 80 square meters for each additional adult. 
+  Facilities for males if housed alone require at least 80 square meters and the height to ensure they are comfortable.</p>
+<p>The new indoor enclosures will see large changes, as the size for female enclosures triple from 200 to 600 square meters for four or fewer animals over the age of 2. In the 2012 standards, if there were more than four over 2 years old, the indoor enclosure size had to increase by 80 square metres. 
+  Now, with the new Standards, it will have to increase by 100 square metres for each new member. </p>
+<p>In some zoos, males are housed separately indoors from the rest of a female herd or from other males to stop fighting or unwanted breeding particularly during Musth: 
+  the reproduction period in adult male elephants. The original 2012 standards said that the stall size for individual housing of bulls must be at least 80 square metres. 
+  With the new standards, this has quadrupled – zoos are now required to provide at least 320 square metres for individual bulls.</p>
+
+<div class="stat-callout">
+  <strong>How much is indoor space for elephants increasing?</strong>
+  <p>The differences between the indoor where each square metre is 0.1 pixels.</p>
+  <div class="chart-row">
+    <div class="chart-item">
+      <div class="old-indoor-cow" style="width:20px; height:20px"></div>
+      <div class="chart-label">
+        <span class="chart-value">200 m²</span>
+        <span class="value-sub">· 2012 standard: female</span>
+      </div>
+    </div>
+    <div class="chart-item">
+      <div class="new-indoor-cow" style="width:60px; height:60px"></div>
+        <div class="chart-label">
+        <span class="chart-value">600 m²</span>
+        <span class="value-sub">· 2025 standard: female</span>
+      </div>
+    </div>
+    <div class="chart-item">
+      <div class="old-indoor-bull" style="width:8px; height:8px"></div>
+      <div class="chart-label">
+        <span class="chart-value">80 m²</span>
+        <span class="value-sub">· 2012 standard: male</span>
+      </div>
+    </div>
+  <div class="chart-item">
+    <div class="new-indoor-bull" style="width:32px; height:32px"></div>
+    <div class="chart-label">
+      <span class="chart-value">320 m²</span>
+      <span class="value-sub">· 2025 standard: male</span>
+    </div>
+  </div>
+  </div>
+  <p>how much has it increased by sorta thing</p>
+</div>
+
+<p>Even bigger changes are in store for the outdoor enclosures. The 2012 standards for Scotland and England require at least 2000 square metres for eight or more females over two years old, increasing to 3000 if there is a male in the herd. 
+  With the new standards coming into practice in 2040, all outdoor enclosures with eight or fewer individuals will require 20,000 square meters regardless of sex of the individual animals. </p>
+<p>The amount of space for each additional individual the standard is also increasing dramatically. In the 2012 standards, outdoor space was required to increase by 200 square metres for every animal over the 8 individuals who are 2 years or older. 
+  In the new standards, the space must increase by 2,500 for every individual over 5 who are 2 years or older.</p>
+
+<div class="stat-callout">
+  <strong>How much is space for elephants increasing?</strong>
+  <p>The differences between the outdoor </p>
+  <div class="chart-row">
+    <div class="chart-item">
+      <div class="old-outdoor-cow" style="width:50px; height:50px"></div>
+      <div class="chart-label">
+        <span class="chart-value">2,000 m²</span>
+        <span class="value-sub">· 2012 standard: eight or fewer females only</span>
+      </div>
+    </div>
+    <div class="chart-item">
+      <div class="old-outdoor-bull" style="width:75px; height:75px"></div>
+      <div class="chart-label">
+        <span class="chart-value">3,000 m²</span>
+        <span class="value-sub">· 2012 standard: with male</span>
+      </div>
+    </div>
+  <div class="chart-item">
+    <div class="new-outdoor" style="width:500px; height:500px"></div>
+    <div class="chart-label">
+      <span class="chart-value">20,000 m²</span>
+      <span class="value-sub">· 2025 standard, comes into action 2040</span>
+    </div>
+  </div>
+  </div>
+  <p>how much has it increased by sorta thing</p>
+</div>
+
+<div class= "article__image-grid">
+  <button class="gallery__item" type="button"
+    data-animal="Scarlet Macaw | Ara Macao"
+    data-status="Least Concern"
+    data-zoo="population decreasing"
+    data-caption="The scarlet macaw has many names such as the red-and-yellow macaw, the red-breasted macaw, and the red-and-blue macaw.
+    Known for their vibrant colours, they are native to the evergreen forests from as far south as central Bolivia and as far north as Mexico.
+    It is the third most common macaw species in captivity and are highly sought after, which has caused a decline in their population."
+    aria-label="More information">
+    <img src="images/scarlet-macaw.jpg" alt="a red, yellow, and blue parrot flies through the sky" />
+    <span class="gallery__caption">Zdeněk Macháček | Unsplash</span>
+  </button>
+  <button class="gallery__item" type="button"
+    data-animal="Indian Peafowl | Pavo cristatus"
+    data-status="Least Concern"
+    data-zoo="population increasing"
+    data-caption="The Indian peafowl, also known as the common peafowl, originates from India, though has been introduced to many parts of the world. 
+    Though colloquially they are referred to as peacocks, the male peafowl are called peacocks only whilst females are called peahens. The Indian peafowl is
+    a good example of sexual dimorphism in animals: while females are predominantly brown with an iridescent green neck, the males are a bright blue with a fan-shaped
+    crest and a long train of bright green feathers that they are most famous for."
+    aria-label="More information">
+    <img src="images/peafowl.jpg" alt="a colourful peacock stands on a concrete path" />
+    <span class="gallery__caption">Natalia Gusakove | Unsplash</span>
+  </button>
+  <button class="gallery__item" type="button"
+    data-animal="Grey parrot | Psittacus erithacus"
+    data-status="Endangered"
+    data-zoo="population decreasing"
+    data-caption="Native to equatorial Africa, the grey parrot is a relatively secret parrot in the wild. The grey parrot is a popular pet, which unfortunately leads to over 20% of the wild 
+    population being taken each year, putting them at risk for extinction. Grey parrots are known for their extremely high intelligence, making them require high levels of enrichment"
+    aria-label="More information">
+    <img src="images/grey parrot.jpg" alt="a grey parrot flies in the sky" />
+    <span class="gallery__caption">Aly Photography | Unsplash</span>
+  </button>
+</div>
+
+<p>Despite these new changes, animal rights activists still believe that these are not enough. While the new rules do provide an increased need for animal care with extra enrichment and space Chris Lewis from Born Free said that there are concerns about how other animals such as birds are kept and whether the space and enrichment for them is enough.</p>
+<p>"If you see how birds are kept and the freedom they have compared to the wild, there is a big ethical question there," he said.</p>
+<p>The biggest concerns raised by Lewis though was what Born Free has dubbed, ‘zoothanasia’, which they define on their website as:</p>
+<blockquote>"Where zoos routinely kill healthy individuals that are no longer useful or profitable and are considered 'surplus stock'</blockquote>
+<p>In zoos, this is commonly called management euthanasia and is a practice most common in European zoos if an individual cannot fit with the conservation or breeding plans of a zoo. </p>
+<p>Though this concern is raised about zoos in the UK and Ireland, speaking to a spokesperson at Folly Farm revealed that the practice is not very common in the UK. He said in the UK, zoos tend to use other options such as keeping bachelor groups like 
+  Folly Farm’s own group of giraffes, birth control in certain species, moving animals between zoos, and putting animals into re-introduction programmes.</p>
+
+<p>However, this does raise questions around how zoos handle the reporting of animal deaths. Across the UK, Ireland, and Europe, animal deaths are required to be reported, however, the cause of death is not.</p>
+<p>Many zoos track causes of death on zoo management systems and do perform post-mortems to investigate why an animal has died, however, there is no obligation to publish these findings. 
+  Animal rights activists are concerned that deaths caused by accident, neglect, or management euthanasia could go under or completely unreported due to the lack of requirements to report them publicly.</p>
+<p>The debate surrounding the welfare of animals kept in zoos comes down to whether the benefits of captivity outweigh the limitations of keeping an animal from its natural habitat. 
+  While critics argue that needs are not being met, zoos argue that they are the best solution and are trying to improve constantly.</p>
+</article>
+</main>
+
+<!-- ANIMAL INFO MODAL -->
+<div class="modal-overlay" id="animalModal" role="dialog" aria-modal="true" aria-labelledby="modalAnimalName" hidden>
+  <div class="modal">
+    <button class="modal__close" id="modalClose" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 3L15 15M15 3L3 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal__photo" id="modalPhoto"></div>
+    <div class="modal__body">
+      <div class="modal__meta">
+        <span class="modal__status" id="modalStatus"></span>
+        <span class="modal__zoo" id="modalZoo"></span>
+      </div>
+      <h2 class="modal__name" id="modalAnimalName"></h2>
+      <p class="modal__caption" id="modalCaption"></p>
+    </div>
+  </div>
+</div>
+
+<!-- NEXT AND PREVIOUS BUTTONS -->
+
+<div class="moving-button">
+  <a class="previous-page" href="articleone.html">Previous Page: Conservation</a>
+  <a class="next-page" href="articlethree.html">Next Article: Finances</a>
+</div>
+<!-- FOOTER -->
+
+<footer>
+  Caged Conservation — MSc Dissertation Project · <a href="about.html">About</a> · <a href="index.html">Home</a> ·
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
