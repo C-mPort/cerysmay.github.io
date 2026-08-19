@@ -730,7 +730,7 @@ body::before {
 
 .article p {
   margin-bottom: 1.4rem;
-  color: var(--cream-line);
+  color: var(--cream);
 }
 
 .article h3 {
@@ -754,7 +754,7 @@ body::before {
 .article blockquote {
   font-family: var(--mono);
   font-size: 0.9rem;
-  color: var(--cream);
+  color: var(--cream-line);
   border-left: 3px solid var(--amber);
   padding-left: 1.3rem;
   margin: 2rem 0;
